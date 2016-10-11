@@ -1,3 +1,6 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
+
 var Product = React.createClass({
     getInitialState: function () {
       return {
@@ -10,7 +13,7 @@ var Product = React.createClass({
     },
 
     show: function () {
-        this.props.handleShow(this.props.name)
+        this.props.handleShow(this.props.name);
         // alert("You selected " + this.props.name)
     },
     render: function () {
